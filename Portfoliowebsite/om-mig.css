@@ -1,0 +1,158 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #f4fdfd;
+      color: #003c3c;
+    }
+
+    header {
+      background-color: #a3ecec;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0, 60, 60, 0.1);
+             border-bottom: 1px solid black;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+    }
+
+
+    
+    nav a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: #003c3c;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #008b8b;
+    }
+
+    main {
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+     .billeder img {
+    width: 630px;
+    border: 2px
+  }
+       .billede img {
+    width: 650px;
+    border: 2px
+  }
+
+     .billedere img {
+    width: 660px;
+    border: 2px
+  }
+
+
+
+    .header-container {
+text-align: center;
+margin-top: 4rem;
+margin-bottom: 3rem;
+}
+
+
+.om {
+text-align: center;}
+
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.site-footer {
+  background-color: #d1f2f0; /* Light teal */
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #333;
+  border-top: 1px solid #000000;
+}
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-links {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #007c7a;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #004f4e;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+  @media (min-width: 768px) {
+    .footer-container {
+      flex-direction: row;
+    }
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .footer-links a {
+    color: #007c7a; /* Darker teal for links */
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+
+  .footer-links a:hover {
+    color: #004f4e; /* Even darker on hover */
+  }
+
+  @media (max-width: 768px) {
+  /* Styles til tablets og mindre skærme */
+}
+
+@media (max-width: 480px) {
+  /* Styles til iPhones og små mobilskærme */
+}
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+  }
+}
